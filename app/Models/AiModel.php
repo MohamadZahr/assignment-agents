@@ -12,8 +12,8 @@ class AiModel extends Model
     /** @use HasFactory<\Database\Factories\AiModelFactory> */
     use HasFactory;
 
-    public function agents()
+    public function agent()
     {
-        return $this->belongsToMany(Agent::class);
+        return $this->belongsTo(Agent::class);
     }   
 }
