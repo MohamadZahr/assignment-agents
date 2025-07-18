@@ -16,8 +16,13 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Test User4',
+            'email' => 'test4@example.com',
+        ]);
+
+        $this->call([
+            AgentSeeder::class,
+            AiModelSeeder::class,
         ]);
     }
 }
